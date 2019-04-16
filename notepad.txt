@@ -1,0 +1,7 @@
+yarn add minimist axios ora --save
+npm install minimist axios ora --save
+
+
+api 
+https://ipdata.co/index.html
+yahoo weather api

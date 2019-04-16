@@ -1,0 +1,29 @@
+{
+  "name": "weatherapp",
+  "version": "1.0.0",
+  "description": "this is an application for weather araound the world",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">=8.0"
+  },
+  "preferGlobal": true,
+  "keywords": [
+    "cli",
+    "weather",
+    "forecast"
+  ],
+  "bin": {
+    "weather": "bin/weather"
+  },
+  "devDependencies": {
+
+  },
+  "dependencies": {
+    
+  },
+  "author": "Alabi Temitope Wahab",
+  "license": "ISC"
+}
