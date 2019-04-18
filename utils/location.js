@@ -5,9 +5,12 @@ module.exports = async ()=> {
         url: 'https://api.ipdata.co?api-key=067b2f67eda5bfd710abb2685c24a3b2367b17ca00ac9a540a1aa97f',
     })
 
-    const { city, region} = results;
+    const { city, country_code} = results.data;
     return {
         city: city,
         country_code: country_code,
     };
+    
+    
 }
+

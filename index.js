@@ -3,6 +3,8 @@ const error = require('./utils/error');
 const version = require('./commands/version');
 const help = require('./commands/help');
 const today = require('./commands/today');
+const tomorrow = require('./commands/tomorrow');
+const two_days_ahead = require('./commands/two_days_ahead');
 
 module.exports = ()=> {
     const args = minimist(process.argv.slice(2));
@@ -18,13 +20,18 @@ module.exports = ()=> {
     switch (command) {
         case 'today':
             today(args);
-            console.log('this is meant to execute a today function');
+            console.log('this will execute today function');
             break;
         
         case 'tomorrow':
-           console.log('this is meant to execute a tomorrow function');
-            
+           console.log('this will execute tomorrow function');
+           tomorrow(args);
             break;
+
+        case 'two_days_ahead':
+            console.log('this will execute two_days_ahead weather condition');
+            two_days_ahead(args);
+             break;
 
         case 'version':
             version();

@@ -18,11 +18,11 @@
   "bin": {
     "weather": "bin/weather"
   },
-  "devDependencies": {
-
-  },
+  "devDependencies": {},
   "dependencies": {
-    
+    "axios": "^0.18.0",
+    "minimist": "^1.2.0",
+    "ora": "^3.4.0"
   },
   "author": "Alabi Temitope Wahab",
   "license": "ISC"

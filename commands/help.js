@@ -4,6 +4,7 @@ const menu = {
 
         today.............show weather for today
         tomorrow..........show weather for tomorrow
+        two_days_ahead....show weather for two days ahead
         version...........show version of app
         help..............show help menu for command
         `,
@@ -16,11 +17,16 @@ const menu = {
         weather tomorrow <options>
         
         eg weather tomorrow --location, -1 ... to pass location variation
+        `,
+    two_days_ahead: `
+        weather two_days_ahead <option>
+
+        eg weather two_days_ahead --location, -1 ... to pass location variation
         `
 }
 
 module.exports = (args) => {
-    const optionalCommand = (arg._[0] === 'help') ? args._[1]:args._[0];
+    const optionalCommand = (args._[0] === 'help') ? args._[1]:args._[0];
 
     console.log(menu[optionalCommand] || menu.main);
     
