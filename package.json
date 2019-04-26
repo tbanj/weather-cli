@@ -2,9 +2,9 @@
   "name": "weatherapp",
   "version": "1.0.0",
   "description": "this is an application for weather araound the world",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node_modules/.bin/mocha"
   },
   "engines": {
     "node": ">=8.0"
@@ -18,10 +18,16 @@
   "bin": {
     "weather": "bin/weather"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "mocha": "^6.1.4",
+    "nock": "^10.0.6",
+    "chai": "^4.2.0"
+  },
   "dependencies": {
     "axios": "^0.18.0",
+    
     "minimist": "^1.2.0",
+    
     "ora": "^3.4.0"
   },
   "author": "Alabi Temitope Wahab",

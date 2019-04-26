@@ -4,7 +4,7 @@ const menu = {
 
         today.............show weather for today
         tomorrow..........show weather for tomorrow
-        two_days_ahead....show weather for two days ahead
+        two_days_ahead....show weather for two_days_ahead
         version...........show version of app
         help..............show help menu for command
         `,

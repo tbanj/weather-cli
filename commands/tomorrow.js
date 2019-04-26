@@ -24,6 +24,6 @@ module.exports = async (args) => {
         
        
     } catch (error) {
-        console.error(error);
+        console.error(error );
     }
 }

@@ -12,7 +12,10 @@ module.exports = async (args) => {
         const location = args.location || args._l || await getLocation();
         // const weather = await getWeather(location);
         const weather = await getWeather.methodToday(location);
+        // console.log(weather);
         
+        
+
 
         spinner.stop();
         
@@ -22,5 +25,6 @@ module.exports = async (args) => {
         
     } catch (error) {
         console.error(error);
+        
     }
 }
